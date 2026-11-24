@@ -1,0 +1,2877 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzA3NTk3MDUwOTkzMzkyMjk2NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzdkYjc0YzViYWYyMGYwOWNfY2xpcC1tYWtlci5odG1sLTc2In0sImV4cCI6MTc5NTUzNTIzNywiaWF0IjoxNzk1NTMxNjM3LCJhbGciOiJSUzI1NiJ9.hrMTBfYvfd_f_ECfoxGyblrscPZu6azr4RJPGeeLRmpVpRmxaekTzIii7mH1JNAQQRJTn1BcJ36G4aNjR7vDy8U2bTDQ2hsgTvKmw-ivc5m9tgsI4movWQXLldQGQI4jw0y_JsuqWcrfZ_wGDnX8Brvqacn2m-Ts10njxq-KKPI7Z6LMdnF5jVR0XloV28NqSSGcjQZB3SjgVkQbZ6gAmDeTRfzt1fDuAkufL8zvvNO4LRCCQnh_zqBkVphBfiAOnBA5rjvJML4YkiKk7_l39EnOImcmqpkfhDWe5rakr5DXZrFH2KAL36d2IjnRh7e3wRaNhSTaCm5463eo0OHrKg","c_7db74c5baf20f09c_clip-maker.html-76")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ClipFrame 9:16 — iPad Local Vertical Clip Studio</title>
+    <!-- Tailwind CSS for responsive, touch-friendly studio layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for crisp social-meme typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Custom Studio Scrollbars & Touch Optimization */
+        * {
+            -webkit-tap-highlight-color: transparent;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            background-color: #0b0c0e;
+            color: #f3f4f6;
+            overscroll-behavior: none;
+        }
+        /* Custom Range Sliders for Touch (iPadOS friendly thumb size) */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+        }
+        input[type="range"]::-webkit-slider-runnable-track {
+            height: 6px;
+            border-radius: 999px;
+            background: #272a30;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 2px solid #3b82f6;
+            margin-top: -8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.1s ease;
+        }
+        input[type="range"]:active::-webkit-slider-thumb {
+            transform: scale(1.15);
+            background: #3b82f6;
+            border-color: #ffffff;
+        }
+
+        /* Dual-handle Timeline Range Overlay */
+        .timeline-slider {
+            position: absolute;
+            width: 100%;
+            pointer-events: none;
+            background: none !important;
+            margin: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .timeline-slider::-webkit-slider-runnable-track {
+            background: transparent !important;
+            height: 0;
+        }
+        .timeline-slider::-webkit-slider-thumb {
+            pointer-events: auto;
+            width: 24px;
+            height: 32px;
+            border-radius: 6px;
+            margin-top: -16px;
+            cursor: ew-resize;
+        }
+        #startRange::-webkit-slider-thumb {
+            background: #10b981;
+            border: 2px solid #ffffff;
+        }
+        #endRange::-webkit-slider-thumb {
+            background: #f43f5e;
+            border: 2px solid #ffffff;
+        }
+
+        /* Hide scrollbars cleanly where appropriate */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.inset-x-3{left:0.75rem;right:0.75rem}.inset-x-4{left:1rem;right:1rem}.bottom-4{bottom:1rem}.left-1\/2{left:50%}.top-1\/2{top:50%}.top-16{top:4rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mt-3\.5{margin-top:0.875rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-\[9\/16\]{aspect-ratio:9/16}.h-12{height:3rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-9{height:2.25rem}.h-full{height:100%}.max-h-\[340px\]{max-height:340px}.min-h-\[36px\]{min-height:36px}.min-h-\[40px\]{min-height:40px}.min-h-\[42px\]{min-height:42px}.min-h-\[44px\]{min-height:44px}.min-h-\[46px\]{min-height:46px}.min-h-\[52px\]{min-height:52px}.min-h-screen{min-height:100vh}.w-1{width:0.25rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-9{width:2.25rem}.w-\[calc\(100\%-24px\)\]{width:calc(100% - 24px)}.w-full{width:100%}.min-w-\[44px\]{min-width:44px}.max-w-\[310px\]{max-width:310px}.max-w-\[360px\]{max-width:360px}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-2{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.select-text{-webkit-user-select:text;user-select:text}.select-all{-webkit-user-select:all;user-select:all}.resize-none{resize:none}.resize-y{resize:vertical}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-visible{overflow:visible}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-dashed{border-style:dashed}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-rose-500\/20{border-color:rgb(244 63 94 / 0.2)}.border-rose-500\/40{border-color:rgb(244 63 94 / 0.4)}.border-white\/15{border-color:rgb(255 255 255 / 0.15)}.border-zinc-600\/80{border-color:rgb(82 82 91 / 0.8)}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-700\/80{border-color:rgb(63 63 70 / 0.8)}.border-zinc-700\/90{border-color:rgb(63 63 70 / 0.9)}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-zinc-800\/80{border-color:rgb(39 39 42 / 0.8)}.border-zinc-800\/90{border-color:rgb(39 39 42 / 0.9)}.bg-\[\#07080a\]{--tw-bg-opacity:1;background-color:rgb(7 8 10 / var(--tw-bg-opacity, 1))}.bg-\[\#101216\]{--tw-bg-opacity:1;background-color:rgb(16 18 22 / var(--tw-bg-opacity, 1))}.bg-\[\#121418\]{--tw-bg-opacity:1;background-color:rgb(18 20 24 / var(--tw-bg-opacity, 1))}.bg-\[\#161920\]{--tw-bg-opacity:1;background-color:rgb(22 25 32 / var(--tw-bg-opacity, 1))}.bg-\[\#171a21\]{--tw-bg-opacity:1;background-color:rgb(23 26 33 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-500\/15{background-color:rgb(59 130 246 / 0.15)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-600\/20{background-color:rgb(5 150 105 / 0.2)}.bg-purple-400{--tw-bg-opacity:1;background-color:rgb(192 132 252 / var(--tw-bg-opacity, 1))}.bg-purple-500\/15{background-color:rgb(168 85 247 / 0.15)}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-rose-500\/10{background-color:rgb(244 63 94 / 0.1)}.bg-rose-600\/20{background-color:rgb(225 29 72 / 0.2)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-900\/50{background-color:rgb(24 24 27 / 0.5)}.bg-zinc-900\/60{background-color:rgb(24 24 27 / 0.6)}.bg-zinc-900\/80{background-color:rgb(24 24 27 / 0.8)}.bg-zinc-900\/90{background-color:rgb(24 24 27 / 0.9)}.bg-zinc-900\/95{background-color:rgb(24 24 27 / 0.95)}.bg-zinc-950{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-zinc-950\/80{background-color:rgb(9 9 11 / 0.8)}.bg-zinc-950\/90{background-color:rgb(9 9 11 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-\[\#191d26\]{--tw-gradient-from:#191d26 var(--tw-gradient-from-position);--tw-gradient-to:rgb(25 29 38 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#191e29\]{--tw-gradient-from:#191e29 var(--tw-gradient-from-position);--tw-gradient-to:rgb(25 30 41 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-\[\#14171f\]{--tw-gradient-to:#14171f var(--tw-gradient-to-position)}.to-\[\#151820\]{--tw-gradient-to:#151820 var(--tw-gradient-to-position)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.to-teal-500{--tw-gradient-to:#14b8a6 var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-contain{object-fit:contain}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-24{padding-bottom:6rem}.pb-3{padding-bottom:0.75rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-emerald-200\/80{color:rgb(167 243 208 / 0.8)}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-zinc-200{--tw-text-opacity:1;color:rgb(228 228 231 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.placeholder-zinc-500::placeholder{--tw-placeholder-opacity:1;color:rgb(113 113 122 / var(--tw-placeholder-opacity, 1))}.accent-blue-500{accent-color:#3b82f6}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_8px_\#fff\]{--tw-shadow:0 0 8px #fff;--tw-shadow-colored:0 0 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_20px_60px_rgba\(0\2c 0\2c 0\2c 0\.85\)\]{--tw-shadow:0 20px 60px rgba(0,0,0,0.85);--tw-shadow-colored:0 20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-zinc-700\/70{--tw-ring-color:rgb(63 63 70 / 0.7)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-100{transition-duration:100ms}.duration-200{transition-duration:200ms}.hover\:bg-amber-400:hover{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600\/30:hover{background-color:rgb(5 150 105 / 0.3)}.hover\:bg-purple-500:hover{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-600\/30:hover{background-color:rgb(225 29 72 / 0.3)}.hover\:bg-zinc-100:hover{--tw-bg-opacity:1;background-color:rgb(244 244 245 / var(--tw-bg-opacity, 1))}.hover\:bg-zinc-700:hover{--tw-bg-opacity:1;background-color:rgb(63 63 70 / var(--tw-bg-opacity, 1))}.hover\:from-emerald-400:hover{--tw-gradient-from:#34d399 var(--tw-gradient-from-position);--tw-gradient-to:rgb(52 211 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-teal-400:hover{--tw-gradient-to:#2dd4bf var(--tw-gradient-to-position)}.hover\:text-amber-200:hover{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.hover\:text-rose-300:hover{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-zinc-200:hover{--tw-text-opacity:1;color:rgb(228 228 231 / var(--tw-text-opacity, 1))}.focus\:border-amber-400:focus{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:border-purple-500:focus{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-400\/20:focus{--tw-ring-color:rgb(251 191 36 / 0.2)}.focus\:ring-blue-500\/20:focus{--tw-ring-color:rgb(59 130 246 / 0.2)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-\[0\.99\]:active{--tw-scale-x:0.99;--tw-scale-y:0.99;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:bg-amber-600:active{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.active\:bg-blue-700:active{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.active\:bg-emerald-600\/40:active{background-color:rgb(5 150 105 / 0.4)}.active\:bg-purple-700:active{--tw-bg-opacity:1;background-color:rgb(126 34 206 / var(--tw-bg-opacity, 1))}.active\:bg-rose-600\/40:active{background-color:rgb(225 29 72 / 0.4)}.active\:bg-zinc-200:active{--tw-bg-opacity:1;background-color:rgb(228 228 231 / var(--tw-bg-opacity, 1))}.active\:bg-zinc-600:active{--tw-bg-opacity:1;background-color:rgb(82 82 91 / var(--tw-bg-opacity, 1))}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-50:disabled{opacity:0.5}@media (min-width: 640px){.sm\:block{display:block}.sm\:inline{display:inline}.sm\:max-w-\[340px\]{max-width:340px}.sm\:flex-initial{flex:0 1 auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:inline{display:inline}}@media (min-width: 1024px){.lg\:h-screen{height:100vh}.lg\:w-\[46\%\]{width:46%}.lg\:max-w-\[330px\]{max-width:330px}.lg\:shrink{flex-shrink:1}.lg\:flex-row{flex-direction:row}.lg\:overflow-hidden{overflow:hidden}.lg\:overflow-y-auto{overflow-y:auto}.lg\:border-b-0{border-bottom-width:0px}.lg\:border-r{border-right-width:1px}.lg\:pb-8{padding-bottom:2rem}}@media (min-width: 1280px){.xl\:w-\[44\%\]{width:44%}.xl\:max-w-\[360px\]{max-width:360px}}</style></head>
+<body class="min-h-screen flex flex-col lg:h-screen lg:overflow-hidden select-none">
+
+    <!-- Top Studio Navigation Bar -->
+    <header class="bg-[#121418] border-b border-zinc-800/90 px-4 py-3 flex items-center justify-between gap-2 shrink-0 z-20">
+        <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-white text-black flex items-center justify-center font-extrabold text-sm shadow-sm">
+                9:16
+            </div>
+            <div>
+                <h1 class="text-sm sm:text-base font-bold tracking-tight text-white leading-tight">ClipFrame Studio</h1>
+                <p class="text-[11px] text-zinc-400 hidden sm:block">1080×1920 Local Letterbox Clip Maker</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <!-- Load Video Trigger -->
+            <label for="videoFileInput" class="cursor-pointer bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white text-xs sm:text-sm font-semibold px-3.5 py-2.5 rounded-xl flex items-center gap-2 transition shadow-sm min-h-[42px]">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"></path>
+                </svg>
+                <span>Load Video</span>
+            </label>
+            <input type="file" id="videoFileInput" accept="video/*" class="hidden">
+
+            <!-- Download Standalone HTML for iPad Offline Local Use -->
+            <button id="downloadHtmlBtn" title="Save single HTML file to iPad Files" class="bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-zinc-200 text-xs sm:text-sm font-medium px-3 py-2.5 rounded-xl flex items-center gap-1.5 border border-zinc-700/80 transition min-h-[42px]">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                <span class="hidden md:inline">Save App (.html)</span>
+            </button>
+
+            <!-- iPad Local Host Help Modal Trigger -->
+            <button id="helpModalBtn" class="bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-zinc-200 text-xs sm:text-sm font-medium px-3 py-2.5 rounded-xl flex items-center gap-1.5 border border-zinc-700/80 transition min-h-[42px]">
+                <svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="hidden sm:inline">iPad Local Guide</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Notification Toast Banner (Replaces alert/confirm) -->
+    <div id="toastBanner" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-200 transform -translate-y-2">
+        <div id="toastContent" class="bg-zinc-900/95 backdrop-blur-md text-white text-xs sm:text-sm font-medium px-4 py-2.5 rounded-full border border-zinc-700 shadow-2xl flex items-center gap-2">
+            <span id="toastDot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span id="toastText">Ready</span>
+        </div>
+    </div>
+
+    <!-- Main Workspace: Left/Top Live 9:16 Preview Stage + Right/Bottom Touch Controls -->
+    <main class="flex-1 flex flex-col lg:flex-row overflow-y-auto lg:overflow-hidden">
+
+        <!-- LEFT STAGE: Live 9:16 Vertical Preview Canvas -->
+        <section id="dropZone" class="w-full lg:w-[46%] xl:w-[44%] bg-[#07080a] border-b lg:border-b-0 lg:border-r border-zinc-800/80 flex flex-col items-center justify-center p-4 sm:p-6 relative shrink-0 lg:shrink">
+            
+            <!-- Aspect Ratio & Resolution Pill -->
+            <div class="w-full max-w-[360px] flex items-center justify-between mb-3 text-[11px] font-medium text-zinc-400">
+                <span class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    LIVE 9:16 CANVAS
+                </span>
+                <span id="resolutionBadge" class="bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded-md text-zinc-300">1080 × 1920 px</span>
+            </div>
+
+            <!-- 9:16 Preview Phone/Reel Frame Container -->
+            <div id="previewStageContainer" class="relative w-full max-w-[310px] sm:max-w-[340px] lg:max-w-[330px] xl:max-w-[360px] aspect-[9/16] rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.85)] ring-1 ring-zinc-700/70 bg-white transition-colors duration-200 flex items-center justify-center">
+                
+                <!-- High-DPI Live Composite Canvas (mirrors exact 1080x1920 export) -->
+                <canvas id="previewCanvas" class="w-full h-full block object-contain" width="1080" height="1920"></canvas>
+
+                <!-- Empty State Overlay when no video is loaded (still shows sample frame!) -->
+                <div id="noVideoHint" class="absolute bottom-4 inset-x-4 bg-black/80 backdrop-blur-md text-white p-3 rounded-xl border border-white/15 flex items-center justify-between gap-3 shadow-lg">
+                    <div class="text-xs leading-snug">
+                        <p class="font-semibold text-white">Sample Preview Active</p>
+                        <p class="text-zinc-300 text-[11px]">Tap <span class="text-blue-400 font-semibold">Load Video</span> or drop a file here</p>
+                    </div>
+                    <button onclick="document.getElementById('videoFileInput').click()" class="bg-white text-black text-xs font-bold px-3 py-2 rounded-lg shrink-0 active:scale-95 transition">
+                        Browse
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Playback Controls directly beneath 9:16 Frame -->
+            <div class="w-full max-w-[360px] mt-3.5 flex items-center justify-between gap-2 bg-zinc-900/90 border border-zinc-800 p-2 rounded-2xl">
+                <button id="seekBack5Btn" class="px-2.5 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-xs font-semibold text-zinc-200 min-h-[40px] min-w-[44px] transition">-5s</button>
+                <button id="seekBack1Btn" class="px-2.5 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-xs font-semibold text-zinc-200 min-h-[40px] min-w-[44px] transition">-1s</button>
+                
+                <button id="playPauseBtn" class="flex-1 py-2 px-4 rounded-xl bg-white hover:bg-zinc-100 active:bg-zinc-200 text-black font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 min-h-[40px] shadow transition">
+                    <svg id="playIcon" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    <svg id="pauseIcon" class="w-4 h-4 fill-current hidden" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
+                    <span id="playPauseLabel">Play Loop</span>
+                </button>
+
+                <button id="seekFwd1Btn" class="px-2.5 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-xs font-semibold text-zinc-200 min-h-[40px] min-w-[44px] transition">+1s</button>
+                <button id="seekFwd5Btn" class="px-2.5 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-xs font-semibold text-zinc-200 min-h-[40px] min-w-[44px] transition">+5s</button>
+            </div>
+        </section>
+
+        <!-- RIGHT PANEL: Studio Editing Controls, Timeline Trimmer, Multi-Clip Queue & Export -->
+        <section class="flex-1 bg-[#101216] lg:overflow-y-auto p-4 sm:p-6 space-y-5 pb-24 lg:pb-8">
+
+            <!-- CARD 1: Onscreen Caption & Framing Style -->
+            <div class="bg-[#171a21] border border-zinc-800/90 rounded-2xl p-4 sm:p-5 space-y-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                        1. Active Reel Caption &amp; Style
+                    </h2>
+                    <!-- Theme Switcher: Classic White vs Cinema Black -->
+                    <div class="flex items-center bg-zinc-900 p-1 rounded-xl border border-zinc-800">
+                        <button id="themeWhiteBtn" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-black shadow-sm transition">
+                            Classic White
+                        </button>
+                        <button id="themeBlackBtn" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition">
+                            Cinema Black
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Editable Caption Textarea -->
+                <div>
+                    <textarea id="captionInput" rows="2" placeholder="Enter meme / pop-culture caption above video..." class="w-full bg-zinc-900/90 border border-zinc-700/90 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 rounded-xl p-3.5 text-base text-white placeholder-zinc-500 outline-none resize-none leading-snug select-text">Glen Powell as a country singer? Yeah, we're seated</textarea>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mt-2">
+                        <div class="flex items-center gap-2">
+                            <button id="fontWeightToggle" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-semibold text-zinc-200 min-h-[36px] transition">
+                                Weight: <span id="fontWeightLabel" class="text-blue-400">Medium (500)</span>
+                            </button>
+                            <button id="textAlignToggle" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 text-xs font-semibold text-zinc-200 min-h-[36px] transition">
+                                Align: <span id="textAlignLabel" class="text-blue-400">Center</span>
+                            </button>
+                        </div>
+                        <button id="clearCaptionBtn" class="text-xs text-zinc-400 hover:text-zinc-200 px-2 py-1">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Sliders Grid for Typography & Video Framing -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                    <!-- Font Size -->
+                    <div class="bg-zinc-900/60 p-3 rounded-xl border border-zinc-800/80">
+                        <div class="flex justify-between text-xs font-medium mb-2">
+                            <span class="text-zinc-400">Caption Font Size</span>
+                            <span id="fontSizeVal" class="text-white font-semibold">44 px</span>
+                        </div>
+                        <input type="range" id="fontSizeSlider" min="28" max="72" value="44" class="w-full">
+                    </div>
+
+                    <!-- Gap Above Video -->
+                    <div class="bg-zinc-900/60 p-3 rounded-xl border border-zinc-800/80">
+                        <div class="flex justify-between text-xs font-medium mb-2">
+                            <span class="text-zinc-400">Gap Above Video</span>
+                            <span id="gapVal" class="text-white font-semibold">42 px</span>
+                        </div>
+                        <input type="range" id="gapSlider" min="16" max="140" value="42" class="w-full">
+                    </div>
+
+                    <!-- Line Spacing -->
+                    <div class="bg-zinc-900/60 p-3 rounded-xl border border-zinc-800/80">
+                        <div class="flex justify-between text-xs font-medium mb-2">
+                            <span class="text-zinc-400">Line Spacing</span>
+                            <span id="lineHeightVal" class="text-white font-semibold">1.28×</span>
+                        </div>
+                        <input type="range" id="lineHeightSlider" min="1.05" max="1.65" step="0.05" value="1.28" class="w-full">
+                    </div>
+
+                    <!-- Video Zoom / Crop -->
+                    <div class="bg-zinc-900/60 p-3 rounded-xl border border-zinc-800/80">
+                        <div class="flex justify-between text-xs font-medium mb-2">
+                            <span class="text-zinc-400">Video Zoom / Fill</span>
+                            <span id="zoomVal" class="text-white font-semibold">100% (Fit)</span>
+                        </div>
+                        <input type="range" id="zoomSlider" min="100" max="175" step="1" value="100" class="w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: Smart Auto-Split Engine (Turn 1 Long Video into Ready-to-Upload Reels) -->
+            <div class="bg-gradient-to-br from-[#191d26] to-[#151820] border border-purple-500/30 rounded-2xl p-4 sm:p-5 space-y-4 shadow-sm">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                        2. Smart Auto-Split Engine
+                    </h2>
+                    <span class="text-[11px] font-semibold bg-purple-500/15 text-purple-300 border border-purple-500/30 px-2.5 py-0.5 rounded-full">1 Video → Multiple Reels</span>
+                </div>
+
+                <!-- Split Mode Selector Tabs -->
+                <div class="grid grid-cols-3 gap-1.5 bg-zinc-950/90 p-1.5 rounded-xl border border-zinc-800">
+                    <button id="splitModeIntervalBtn" class="py-2 px-2 rounded-lg text-xs font-bold bg-purple-600 text-white shadow transition">
+                        Equal Intervals
+                    </button>
+                    <button id="splitModePeaksBtn" class="py-2 px-2 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition">
+                        Audio Peaks
+                    </button>
+                    <button id="splitModeScriptBtn" class="py-2 px-2 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition">
+                        Timestamps
+                    </button>
+                </div>
+
+                <!-- MODE 1: Equal Smart Intervals Panel -->
+                <div id="splitPanelInterval" class="space-y-3">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3">
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1.5">Reel Length</label>
+                            <select id="intervalDurationSelect" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white outline-none">
+                                <option value="15">15 sec (Fast Hook)</option>
+                                <option value="20">20 sec (Punchy)</option>
+                                <option value="30" selected="">30 sec (Sweet Spot)</option>
+                                <option value="45">45 sec (Storytelling)</option>
+                                <option value="60">60 sec (Full Reel)</option>
+                                <option value="custom">Custom Seconds...</option>
+                            </select>
+                            <input type="number" id="customIntervalInput" min="3" max="180" value="25" placeholder="Sec" class="hidden mt-2 w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-1.5 text-xs text-white outline-none">
+                        </div>
+
+                        <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3">
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1.5">Hook Overlap (Buffer)</label>
+                            <select id="intervalOverlapSelect" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white outline-none">
+                                <option value="0" selected="">0s (Clean Cuts)</option>
+                                <option value="1">1s Overlap</option>
+                                <option value="2">2s Context Overlap</option>
+                            </select>
+                        </div>
+
+                        <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3">
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1.5">Min Final Clip</label>
+                            <select id="minTailSelect" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white outline-none">
+                                <option value="4">4s (Keep short tail)</option>
+                                <option value="8" selected="">8s (Merge if shorter)</option>
+                                <option value="12">12s (Merge if shorter)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="runIntervalSplitBtn" class="w-full bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 min-h-[46px] transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 11-5.196 3 3 0 015.196-3zm1.536-.887a2.165 2.165 0 001.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863l2.077-1.199m0-3.328a4.323 4.323 0 012.068-1.379l5.325-1.628a4.5 4.5 0 012.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.331 4.331 0 0010.607 12m3.736 0l7.794 4.5-.802.215a4.5 4.5 0 01-2.48-.043l-5.326-1.629a4.324 4.324 0 01-2.068-1.379M14.343 12l-2.882 1.664"></path>
+                        </svg>
+                        <span>Auto-Split Video into Equal Reels</span>
+                    </button>
+                </div>
+
+                <!-- MODE 2: Smart Audio Peak / Energy Detection Panel -->
+                <div id="splitPanelPeaks" class="hidden space-y-3">
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Scans the video's audio waveform locally on your iPad to find applause, laughter, punchlines, or beat drops, and slices viral-length Reels around the top energy peaks.
+                    </p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3">
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1.5">Target Clip Count</label>
+                            <select id="peakCountSelect" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white outline-none">
+                                <option value="3">Top 3 Viral Moments</option>
+                                <option value="5" selected="">Top 5 Viral Moments</option>
+                                <option value="8">Top 8 Viral Moments</option>
+                                <option value="12">Top 12 Viral Moments</option>
+                            </select>
+                        </div>
+                        <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3">
+                            <label class="block text-[11px] font-semibold text-zinc-400 mb-1.5">Clip Window Around Peak</label>
+                            <select id="peakWindowSelect" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white outline-none">
+                                <option value="15">15 sec clip</option>
+                                <option value="25" selected="">25 sec clip</option>
+                                <option value="35">35 sec clip</option>
+                                <option value="45">45 sec clip</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="runPeakSplitBtn" class="w-full bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 min-h-[46px] transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+                        </svg>
+                        <span id="peakBtnLabel">Detect Audio Peaks &amp; Create Reels</span>
+                    </button>
+                </div>
+
+                <!-- MODE 3: Timestamp + Caption Script Parser Panel -->
+                <div id="splitPanelScript" class="hidden space-y-3">
+                    <p class="text-xs text-zinc-400">
+                        Paste lines with timestamps &amp; captions (e.g., <code class="text-purple-300">00:12 - 00:34 | Glen Powell as a country singer?</code> or <code class="text-purple-300">01:05 Best crowd reaction ever</code>).
+                    </p>
+                    <textarea id="timestampScriptInput" rows="4" placeholder="00:05 - 00:25 | Glen Powell as a country singer? Yeah, we're seated
+00:42 - 01:08 | When the beat drops in Nashville
+01:30 | Wait until the end for this crowd reaction" class="w-full bg-zinc-950 border border-zinc-700 focus:border-purple-500 rounded-xl p-3 text-xs text-white placeholder-zinc-500 outline-none resize-y select-text font-mono"></textarea>
+                    <button id="runScriptParseBtn" class="w-full bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 min-h-[46px] transition">
+                        <span>Parse Timestamps &amp; Generate Reels</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 3: Bulk Caption Paster & Auto-Mapper ("Paste All Captions") -->
+            <div class="bg-[#171a21] border border-amber-500/30 rounded-2xl p-4 sm:p-5 space-y-3.5 shadow-sm">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        3. Bulk Captions Paster &amp; Auto-Mapper
+                    </h2>
+                    <div class="flex items-center gap-1.5 text-[11px] font-mono">
+                        <span id="pastedCaptionCountBadge" class="bg-amber-500/15 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-md font-bold">0 captions</span>
+                        <span class="text-zinc-500">vs</span>
+                        <span id="queueMatchCountBadge" class="bg-zinc-800 text-zinc-300 border border-zinc-700 px-2 py-0.5 rounded-md font-bold">0 reels</span>
+                    </div>
+                </div>
+
+                <p class="text-xs text-zinc-400 leading-relaxed">
+                    Paste all your captions below (one per line, or separated by blank lines / <code class="text-zinc-300">---</code>). Numbering like <code class="text-zinc-300">1.</code> or <code class="text-zinc-300">Clip 1:</code> is cleaned automatically.
+                </p>
+
+                <!-- Delimiter Mode Selector -->
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-1.5 bg-zinc-900 p-1 rounded-xl border border-zinc-800">
+                        <button id="delimLineBtn" class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black transition">
+                            1 Line = 1 Reel
+                        </button>
+                        <button id="delimBlankBtn" class="px-2.5 py-1 rounded-lg text-[11px] font-semibold text-zinc-400 hover:text-white transition">
+                            Blank Line / ---
+                        </button>
+                    </div>
+                    <button id="pasteClipboardBulkBtn" class="text-xs font-semibold text-amber-300 hover:text-amber-200 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-lg transition">
+                        Paste from Clipboard
+                    </button>
+                </div>
+
+                <textarea id="bulkCaptionsInput" rows="5" placeholder="Paste all captions here at once...
+
+1. Glen Powell as a country singer? Yeah, we're seated
+2. Nobody expected this plot twist halfway through
+3. The crowd reaction at 0:45 gave me chills
+4. Save this for when you need instant motivation" class="w-full bg-zinc-900/95 border border-zinc-700/90 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 rounded-xl p-3.5 text-xs sm:text-sm text-white placeholder-zinc-500 outline-none resize-y leading-relaxed select-text"></textarea>
+
+                <!-- Action Buttons: Map 1-to-1 OR Auto-Create Clips to Match Captions -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <button id="mapCaptionsToReelsBtn" class="bg-amber-500 hover:bg-amber-400 active:bg-amber-600 text-black font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 min-h-[46px] transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"></path>
+                        </svg>
+                        <span>Map Captions to Reels (1-to-1)</span>
+                    </button>
+
+                    <button id="splitToMatchCaptionsBtn" class="bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-amber-300 border border-amber-500/30 font-bold text-xs sm:text-sm py-3 px-4 rounded-xl flex items-center justify-center gap-2 min-h-[46px] transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path>
+                        </svg>
+                        <span>Auto-Split Video to Match Count</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 4: Precision Clip Trimmer (Fine-Tune Selected Reel) -->
+            <div class="bg-[#171a21] border border-zinc-800/90 rounded-2xl p-4 sm:p-5 space-y-4 shadow-sm">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        4. Fine-Tune Selected Reel Trim
+                    </h2>
+                    <div class="flex items-center gap-2">
+                        <span id="currentTimeBadge" class="text-xs font-mono bg-zinc-900 border border-zinc-700 px-2.5 py-1 rounded-lg text-zinc-300">00:00.0</span>
+                        <span id="clipDurationBadge" class="text-xs font-mono font-bold bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 px-2.5 py-1 rounded-lg">Clip: 00:10.0s</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Visual Timeline Bar -->
+                <div class="space-y-2">
+                    <div class="relative h-12 bg-zinc-900 rounded-xl border border-zinc-800 px-3 flex items-center">
+                        <!-- Track Background -->
+                        <div class="relative w-full h-2.5 bg-zinc-800 rounded-full overflow-visible">
+                            <!-- Selected Clip Range Highlight -->
+                            <div id="selectedRangeBar" class="absolute h-full bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full" style="left: 0%; width: 100%;"></div>
+                            <!-- Playhead Indicator -->
+                            <div id="playheadMarker" class="absolute top-1/2 -translate-y-1/2 w-1 h-6 bg-white rounded-full shadow-[0_0_8px_#fff] pointer-events-none z-10" style="left: 0%;"></div>
+                        </div>
+
+                        <!-- Dual Range Sliders for Start & End -->
+                        <input type="range" id="startRange" min="0" max="100" step="0.05" value="0" class="timeline-slider inset-x-3 w-[calc(100%-24px)] z-20" aria-label="Clip Start Time">
+                        <input type="range" id="endRange" min="0" max="100" step="0.05" value="100" class="timeline-slider inset-x-3 w-[calc(100%-24px)] z-20" aria-label="Clip End Time">
+                    </div>
+
+                    <!-- Scrubbing Bar for Current Playhead -->
+                    <div class="flex items-center gap-3 px-1">
+                        <span class="text-[11px] font-medium text-zinc-400 shrink-0">Scrub</span>
+                        <input type="range" id="playheadScrubber" min="0" max="100" step="0.05" value="0" class="w-full">
+                    </div>
+                </div>
+
+                <!-- In / Out Time Controls -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3 flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold text-emerald-400">START (IN)</span>
+                            <span id="startTimeDisplay" class="text-xs font-mono font-bold text-white">00:00.0</span>
+                        </div>
+                        <button id="setStartNowBtn" class="w-full py-2.5 px-3 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 active:bg-emerald-600/40 border border-emerald-500/40 text-emerald-300 text-xs font-bold min-h-[42px] transition">
+                            Set Start to Current
+                        </button>
+                    </div>
+
+                    <div class="bg-zinc-900/80 border border-zinc-800 rounded-xl p-3 flex flex-col gap-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-semibold text-rose-400">END (OUT)</span>
+                            <span id="endTimeDisplay" class="text-xs font-mono font-bold text-white">00:10.0</span>
+                        </div>
+                        <button id="setEndNowBtn" class="w-full py-2.5 px-3 rounded-lg bg-rose-600/20 hover:bg-rose-600/30 active:bg-rose-600/40 border border-rose-500/40 text-rose-300 text-xs font-bold min-h-[42px] transition">
+                            Set End to Current
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Loop Toggle & Add New Reel Button -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                    <label class="flex items-center gap-2.5 cursor-pointer bg-zinc-900 px-3.5 py-2.5 rounded-xl border border-zinc-800 min-h-[44px]">
+                        <input type="checkbox" id="loopClipCheckbox" checked="" class="w-4 h-4 accent-blue-500 rounded">
+                        <span class="text-xs font-semibold text-zinc-200">Auto-Loop Selected Clip</span>
+                    </label>
+
+                    <button id="saveToQueueBtn" class="flex-1 sm:flex-initial bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-white border border-zinc-600/80 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl flex items-center justify-center gap-2 min-h-[44px] transition">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                        </svg>
+                        <span>+ Add Current Cut as New Reel</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 5: Ready-to-Upload Reels Storyboard & Queue -->
+            <div class="bg-[#171a21] border border-zinc-800/90 rounded-2xl p-4 sm:p-5 space-y-3 shadow-sm">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        5. Ready-to-Upload Reels (<span id="queueCount">0</span>)
+                    </h2>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[11px] text-zinc-400 hidden sm:inline">Tap card to preview • Edit text inline</span>
+                        <button id="clearQueueBtn" class="text-[11px] font-semibold text-rose-400 hover:text-rose-300 bg-rose-500/10 border border-rose-500/20 px-2.5 py-1 rounded-lg transition">
+                            Clear All
+                        </button>
+                    </div>
+                </div>
+
+                <div id="clipQueueList" class="space-y-2.5 max-h-[340px] overflow-y-auto pr-1">
+                    <div class="text-xs text-zinc-500 bg-zinc-900/50 border border-dashed border-zinc-800 rounded-xl p-4 text-center">
+                        No Reels generated yet. Use <strong class="text-purple-300">Smart Auto-Split Engine</strong> above or tap <strong class="text-zinc-300">+ Add Current Cut as New Reel</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6: Client-Side 1080x1920 Single & Batch Export -->
+            <div class="bg-gradient-to-br from-[#191e29] to-[#14171f] border border-blue-500/30 rounded-2xl p-4 sm:p-5 space-y-4 shadow-lg">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-sm font-bold uppercase tracking-wider text-white flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                            6. Export Ready-to-Upload Reels
+                        </h2>
+                        <p class="text-xs text-zinc-400 mt-0.5">Renders locally on your iPad at 1080×1920 with audio</p>
+                    </div>
+                    <span id="formatSupportBadge" class="text-[11px] font-mono bg-blue-500/15 text-blue-300 border border-blue-500/30 px-2.5 py-1 rounded-lg">Native .MP4</span>
+                </div>
+
+                <!-- Export Progress Bar (Hidden until rendering) -->
+                <div id="exportProgressContainer" class="hidden space-y-2 bg-zinc-950/80 p-3.5 rounded-xl border border-zinc-800">
+                    <div class="flex justify-between text-xs font-semibold">
+                        <span id="exportStatusText" class="text-blue-400">Rendering 1080×1920 Reel...</span>
+                        <span id="exportPercentText" class="text-white font-mono">0%</span>
+                    </div>
+                    <div class="w-full h-2.5 bg-zinc-800 rounded-full overflow-hidden">
+                        <div id="exportProgressBar" class="h-full bg-blue-500 transition-all duration-100 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button id="cancelExportBtn" class="text-xs text-rose-400 hover:text-rose-300 font-semibold px-2 py-1">Cancel Render</button>
+                    </div>
+                </div>
+
+                <!-- Primary Export Action Buttons: Batch All Reels + Single Selected Reel -->
+                <div class="space-y-2.5">
+                    <button id="batchExportAllBtn" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed text-black font-extrabold text-sm py-3.5 px-5 rounded-xl shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 min-h-[52px] transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+                        </svg>
+                        <span id="batchExportBtnText">Batch Export All Reels (0)</span>
+                    </button>
+
+                    <div class="flex flex-col sm:flex-row gap-2.5">
+                        <button id="exportClipBtn" class="flex-1 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2 min-h-[46px] transition">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+                            </svg>
+                            <span id="exportBtnText">Export Active Reel Only (.mp4)</span>
+                        </button>
+
+                        <button id="exportSnapshotBtn" title="Download high-res 1080x1920 PNG frame" class="bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 text-zinc-200 font-semibold text-xs sm:text-sm py-3 px-4 rounded-xl border border-zinc-700 flex items-center justify-center gap-2 min-h-[46px] transition">
+                            <svg class="w-4 h-4 text-zinc-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"></path>
+                            </svg>
+                            <span>PNG Frame</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Download Ready Banner (Appears after export finishes) -->
+                <div id="downloadReadyBox" class="hidden bg-emerald-500/15 border border-emerald-500/40 rounded-xl p-3.5 flex items-center justify-between gap-3">
+                    <div class="text-xs">
+                        <p class="font-bold text-emerald-300">Export Complete!</p>
+                        <p id="downloadMetaText" class="text-emerald-200/80 mt-0.5">1080×1920 • Ready for iPad Files / Photos</p>
+                    </div>
+                    <a id="manualDownloadLink" href="#" download="vertical-clip.mp4" class="bg-emerald-500 hover:bg-emerald-400 text-black font-bold text-xs px-4 py-2.5 rounded-lg shrink-0 shadow transition">
+                        Save File
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Hidden Source Video Element (plays inline on iPad Safari without fullscreen takeover) -->
+    <video id="sourceVideo" playsinline="" webkit-playsinline="" preload="auto" class="hidden"></video>
+
+    <!-- Offscreen Full-Resolution 1080x1920 Canvas for Crisp Rendering -->
+    <canvas id="exportCanvas" width="1080" height="1920" class="hidden"></canvas>
+
+    <!-- iPad Local-Host Instructions Modal -->
+    <div id="helpModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-[#161920] border border-zinc-700 rounded-2xl max-w-lg w-full p-5 sm:p-6 space-y-4 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+                <h3 class="text-base font-bold text-white flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                    How to Run Locally on iPad
+                </h3>
+                <button id="closeHelpModalBtn" class="text-zinc-400 hover:text-white p-1.5 rounded-lg bg-zinc-800">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                <div class="bg-zinc-900/90 border border-zinc-800 p-3.5 rounded-xl space-y-1.5">
+                    <p class="font-bold text-white">Option 1: Run via Localhost Server (Recommended for Safari)</p>
+                    <p class="text-zinc-400 text-xs">Using <strong class="text-zinc-200">a-Shell</strong> or <strong class="text-zinc-200">iSH</strong> on iPad (or your Mac/PC on the same Wi-Fi):</p>
+                    <code class="block bg-black text-emerald-400 font-mono text-xs p-2.5 rounded-lg border border-zinc-800 select-all">python3 -m http.server 8080</code>
+                    <p class="text-zinc-400 text-xs">Then open <span class="text-blue-400 font-mono">http://localhost:8080</span> in iPad Safari.</p>
+                </div>
+
+                <div class="bg-zinc-900/90 border border-zinc-800 p-3.5 rounded-xl space-y-1.5">
+                    <p class="font-bold text-white">Option 2: Offline Single-File in iPad Files</p>
+                    <p class="text-zinc-400 text-xs">Tap <strong class="text-emerald-400">Save App (.html)</strong> in the top bar to save <code class="text-zinc-200">clip-maker.html</code> into your iPad <em>Files</em> app. You can open it anytime locally without internet.</p>
+                </div>
+
+                <div class="bg-blue-500/10 border border-blue-500/30 p-3 rounded-xl text-xs text-blue-200">
+                    <strong>iPad Video Tip:</strong> Your videos never leave your iPad. When you export, Safari saves an <code class="font-mono">.mp4</code> directly to your iPad Downloads/Files—tap Share → <em>Save Video</em> to send it straight to your Camera Roll.
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-1">
+                <button id="gotItBtn" class="bg-white text-black font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl active:scale-95 transition">
+                    Got It
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * ClipFrame 9:16 — Self-Contained Client-Side Vertical Clip Maker
+         * Renders 1080x1920 letterbox social clips with wrapped top captions and Web Audio/MediaRecorder export.
+         */
+        (() => {
+            // --- Core Canvas & DOM References ---
+            const previewCanvas = document.getElementById('previewCanvas');
+            const previewCtx = previewCanvas.getContext('2d');
+            const exportCanvas = document.getElementById('exportCanvas');
+            const exportCtx = exportCanvas.getContext('2d');
+            const sourceVideo = document.getElementById('sourceVideo');
+
+            // Set internal resolution of preview canvas to 1080x1920 for 1:1 WYSIWYG accuracy
+            const TARGET_WIDTH = 1080;
+            const TARGET_HEIGHT = 1920;
+            previewCanvas.width = TARGET_WIDTH;
+            previewCanvas.height = TARGET_HEIGHT;
+
+            // Controls
+            const videoFileInput = document.getElementById('videoFileInput');
+            const dropZone = document.getElementById('dropZone');
+            const noVideoHint = document.getElementById('noVideoHint');
+            const captionInput = document.getElementById('captionInput');
+            const fontSizeSlider = document.getElementById('fontSizeSlider');
+            const gapSlider = document.getElementById('gapSlider');
+            const lineHeightSlider = document.getElementById('lineHeightSlider');
+            const zoomSlider = document.getElementById('zoomSlider');
+            const themeWhiteBtn = document.getElementById('themeWhiteBtn');
+            const themeBlackBtn = document.getElementById('themeBlackBtn');
+            const fontWeightToggle = document.getElementById('fontWeightToggle');
+            const textAlignToggle = document.getElementById('textAlignToggle');
+            const clearCaptionBtn = document.getElementById('clearCaptionBtn');
+
+            // Timeline & Playback Controls
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            const playIcon = document.getElementById('playIcon');
+            const pauseIcon = document.getElementById('pauseIcon');
+            const playPauseLabel = document.getElementById('playPauseLabel');
+            const seekBack5Btn = document.getElementById('seekBack5Btn');
+            const seekBack1Btn = document.getElementById('seekBack1Btn');
+            const seekFwd1Btn = document.getElementById('seekFwd1Btn');
+            const seekFwd5Btn = document.getElementById('seekFwd5Btn');
+            const startRange = document.getElementById('startRange');
+            const endRange = document.getElementById('endRange');
+            const playheadScrubber = document.getElementById('playheadScrubber');
+            const selectedRangeBar = document.getElementById('selectedRangeBar');
+            const playheadMarker = document.getElementById('playheadMarker');
+            const setStartNowBtn = document.getElementById('setStartNowBtn');
+            const setEndNowBtn = document.getElementById('setEndNowBtn');
+            const loopClipCheckbox = document.getElementById('loopClipCheckbox');
+
+            // Queue & Export Controls
+            const saveToQueueBtn = document.getElementById('saveToQueueBtn');
+            const clearQueueBtn = document.getElementById('clearQueueBtn');
+            const clipQueueList = document.getElementById('clipQueueList');
+            const queueCount = document.getElementById('queueCount');
+            const batchExportAllBtn = document.getElementById('batchExportAllBtn');
+            const batchExportBtnText = document.getElementById('batchExportBtnText');
+            const exportClipBtn = document.getElementById('exportClipBtn');
+            const exportSnapshotBtn = document.getElementById('exportSnapshotBtn');
+            const exportProgressContainer = document.getElementById('exportProgressContainer');
+            const exportProgressBar = document.getElementById('exportProgressBar');
+            const exportStatusText = document.getElementById('exportStatusText');
+            const exportPercentText = document.getElementById('exportPercentText');
+            const cancelExportBtn = document.getElementById('cancelExportBtn');
+            const downloadReadyBox = document.getElementById('downloadReadyBox');
+            const manualDownloadLink = document.getElementById('manualDownloadLink');
+            const downloadMetaText = document.getElementById('downloadMetaText');
+
+            // Smart Split & Bulk Caption Controls
+            const bulkCaptionsInput = document.getElementById('bulkCaptionsInput');
+            const pastedCaptionCountBadge = document.getElementById('pastedCaptionCountBadge');
+            const queueMatchCountBadge = document.getElementById('queueMatchCountBadge');
+
+            // --- Application State ---
+            const state = {
+                hasVideo: false,
+                currentVideoFile: null,
+                videoDuration: 10,
+                startTime: 0,
+                endTime: 10,
+                theme: 'white', // 'white' (#FFFFFF bg, #111111 text) | 'black' (#000000 bg, #FFFFFF text)
+                caption: "Glen Powell as a country singer? Yeah, we're seated",
+                fontSize: 44,
+                gapAboveVideo: 42,
+                lineHeight: 1.28,
+                videoZoom: 100, // percentage (100 = full width fit)
+                fontWeightIndex: 1, // 0: 400 (Regular), 1: 500 (Medium), 2: 700 (Bold)
+                textAlignIndex: 0, // 0: 'center', 1: 'left'
+                clipQueue: [], // Array of { id, startTime, endTime, caption, theme, status }
+                activeReelIndex: -1, // Currently selected reel in clipQueue (-1 if none)
+                bulkDelimiterMode: 'line', // 'line' | 'blank'
+                isExporting: false,
+                cancelExportFlag: false,
+                currentObjectUrl: null,
+                lastExportUrl: null
+            };
+
+            const FONT_WEIGHTS = [
+                { weight: '400', label: 'Regular (400)' },
+                { weight: '500', label: 'Medium (500)' },
+                { weight: '700', label: 'Bold (700)' }
+            ];
+
+            const TEXT_ALIGNS = [
+                { align: 'center', label: 'Center' },
+                { align: 'left', label: 'Left' }
+            ];
+
+            // Web Audio API nodes for capturing audio cleanly during client-side export
+            let audioCtx = null;
+            let mediaElementSource = null;
+            let audioDestination = null;
+
+            // --- Helper: Toast Notification ---
+            let toastTimer = null;
+            function showToast(message, type = 'success') {
+                const banner = document.getElementById('toastBanner');
+                const text = document.getElementById('toastText');
+                const dot = document.getElementById('toastDot');
+                text.textContent = message;
+                dot.className = 'w-2 h-2 rounded-full ' + (
+                    type === 'error' ? 'bg-rose-400' :
+                    type === 'info' ? 'bg-blue-400' : 'bg-emerald-400'
+                );
+                banner.classList.remove('opacity-0', '-translate-y-2');
+                banner.classList.add('opacity-100', 'translate-y-0');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    banner.classList.remove('opacity-100', 'translate-y-0');
+                    banner.classList.add('opacity-0', '-translate-y-2');
+                }, 2600);
+            }
+
+            // --- Helper: Format Seconds to MM:SS.d ---
+            function formatTime(sec) {
+                if (!isFinite(sec) || sec < 0) sec = 0;
+                const mins = Math.floor(sec / 60);
+                const secs = Math.floor(sec % 60);
+                const tenths = Math.floor((sec % 1) * 10);
+                return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}.${tenths}`;
+            }
+
+            // --- Helper: Wrap Multi-Line Text Accurately on Canvas ---
+            function wrapTextLines(ctx, text, maxWidth) {
+                if (!text || !text.trim()) return [];
+                const paragraphs = text.split('\n');
+                const lines = [];
+
+                for (const para of paragraphs) {
+                    const words = para.split(/\s+/);
+                    let currentLine = '';
+
+                    for (let i = 0; i < words.length; i++) {
+                        const word = words[i];
+                        const testLine = currentLine ? `${currentLine} ${word}` : word;
+                        const metrics = ctx.measureText(testLine);
+
+                        if (metrics.width > maxWidth && currentLine !== '') {
+                            lines.push(currentLine);
+                            currentLine = word;
+                        } else {
+                            currentLine = testLine;
+                        }
+                    }
+                    if (currentLine) {
+                        lines.push(currentLine);
+                    }
+                }
+                return lines;
+            }
+
+            // --- Core Composite Renderer (Draws 1080x1920 Frame onto any 2D Context) ---
+            function renderCompositeFrame(ctx) {
+                const W = TARGET_WIDTH;
+                const H = TARGET_HEIGHT;
+
+                // 1. Solid Letterbox Background (Classic White or Cinema Black)
+                const isWhite = state.theme === 'white';
+                ctx.fillStyle = isWhite ? '#FFFFFF' : '#000000';
+                ctx.fillRect(0, 0, W, H);
+
+                // 2. Calculate Video Geometry (Centered Vertically in 9:16 Frame)
+                let srcW = 1920;
+                let srcH = 1080;
+                if (state.hasVideo && sourceVideo.videoWidth > 0 && sourceVideo.videoHeight > 0) {
+                    srcW = sourceVideo.videoWidth;
+                    srcH = sourceVideo.videoHeight;
+                }
+
+                const aspect = srcW / srcH;
+                const zoomFactor = state.videoZoom / 100;
+
+                // Base fit: full 1080px width, height scaled proportionally
+                const baseDrawW = W;
+                const baseDrawH = Math.round(W / aspect);
+                // Clamp max video height so top/bottom letterbox space remains clean even for square/tall sources
+                const frameBoxH = Math.min(baseDrawH, Math.round(H * 0.62));
+                const frameBoxY = Math.round((H - frameBoxH) / 2);
+
+                // Apply zoom inside the centered video viewport
+                const zoomedW = baseDrawW * zoomFactor;
+                const zoomedH = (baseDrawW / aspect) * zoomFactor;
+                const drawX = (W - zoomedW) / 2;
+                const drawY = frameBoxY + (frameBoxH - zoomedH) / 2;
+
+                // Clip strictly to the centered video rectangle so zooming crops cleanly
+                ctx.save();
+                ctx.beginPath();
+                ctx.rect(0, frameBoxY, W, frameBoxH);
+                ctx.clip();
+
+                if (state.hasVideo && sourceVideo.readyState >= 2) {
+                    ctx.drawImage(sourceVideo, drawX, drawY, zoomedW, zoomedH);
+                } else {
+                    // Stylish Placeholder Stage Frame matching the country concert vibe from reference
+                    const grad = ctx.createLinearGradient(0, frameBoxY, W, frameBoxY + frameBoxH);
+                    grad.addColorStop(0, '#181412');
+                    grad.addColorStop(0.5, '#2c221b');
+                    grad.addColorStop(1, '#111317');
+                    ctx.fillStyle = grad;
+                    ctx.fillRect(0, frameBoxY, W, frameBoxH);
+
+                    // Subtle stage spotlight glow
+                    const spot = ctx.createRadialGradient(W * 0.5, frameBoxY + frameBoxH * 0.35, 20, W * 0.5, frameBoxY + frameBoxH * 0.45, 420);
+                    spot.addColorStop(0, 'rgba(245, 185, 113, 0.32)');
+                    spot.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                    ctx.fillStyle = spot;
+                    ctx.fillRect(0, frameBoxY, W, frameBoxH);
+
+                    // Placeholder label
+                    ctx.fillStyle = 'rgba(255,255,255,0.75)';
+                    ctx.font = '600 32px Inter, -apple-system, sans-serif';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText('16:9 VIDEO PREVIEW AREA', W / 2, frameBoxY + frameBoxH / 2 - 18);
+
+                    ctx.fillStyle = 'rgba(255,255,255,0.45)';
+                    ctx.font = '400 24px Inter, -apple-system, sans-serif';
+                    ctx.fillText('Load any long-form video from your iPad', W / 2, frameBoxY + frameBoxH / 2 + 24);
+                }
+                ctx.restore();
+
+                // 3. Render Editable Onscreen Caption Directly Above Top Edge of Video Frame
+                const captionText = state.caption;
+                if (captionText && captionText.trim().length > 0) {
+                    const weightObj = FONT_WEIGHTS[state.fontWeightIndex];
+                    const alignObj = TEXT_ALIGNS[state.textAlignIndex];
+                    const fontSize = state.fontSize;
+                    const lineHeightPx = Math.round(fontSize * state.lineHeight);
+                    const horizontalPadding = 72; // Clean margins on left & right of 1080px canvas
+                    const maxTextWidth = W - horizontalPadding * 2;
+
+                    ctx.font = `${weightObj.weight} ${fontSize}px Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif`;
+                    ctx.fillStyle = isWhite ? '#111111' : '#F9FAFB';
+                    ctx.textBaseline = 'alphabetic';
+
+                    const lines = wrapTextLines(ctx, captionText, maxTextWidth);
+                    const totalTextBlockHeight = lines.length * lineHeightPx;
+
+                    // Position bottom line neatly above the video's top edge using gapAboveVideo
+                    const bottomBaselineY = frameBoxY - state.gapAboveVideo;
+                    const firstBaselineY = bottomBaselineY - (lines.length - 1) * lineHeightPx;
+
+                    lines.forEach((line, idx) => {
+                        const y = firstBaselineY + idx * lineHeightPx;
+                        if (alignObj.align === 'center') {
+                            ctx.textAlign = 'center';
+                            ctx.fillText(line, W / 2, y);
+                        } else {
+                            ctx.textAlign = 'left';
+                            ctx.fillText(line, horizontalPadding, y);
+                        }
+                    });
+                }
+            }
+
+            // --- Continuous Animation Loop for Live 9:16 Preview ---
+            function previewLoop() {
+                // Enforce Auto-Loop within [startTime, endTime] during normal playback
+                if (state.hasVideo && !sourceVideo.paused && !state.isExporting) {
+                    if (loopClipCheckbox.checked && sourceVideo.currentTime >= state.endTime) {
+                        sourceVideo.currentTime = state.startTime;
+                    }
+                    syncTimelineUI();
+                }
+
+                renderCompositeFrame(previewCtx);
+                requestAnimationFrame(previewLoop);
+            }
+
+            // --- Timeline & UI Synchronization ---
+            function syncTimelineUI() {
+                const dur = state.videoDuration || 10;
+                const cur = state.hasVideo ? sourceVideo.currentTime : state.startTime;
+
+                document.getElementById('currentTimeBadge').textContent = formatTime(cur);
+                document.getElementById('startTimeDisplay').textContent = formatTime(state.startTime);
+                document.getElementById('endTimeDisplay').textContent = formatTime(state.endTime);
+
+                const clipLen = Math.max(0.1, state.endTime - state.startTime);
+                document.getElementById('clipDurationBadge').textContent = `Clip: ${formatTime(clipLen)}s`;
+
+                const startPct = (state.startTime / dur) * 100;
+                const endPct = (state.endTime / dur) * 100;
+                const curPct = Math.min(100, Math.max(0, (cur / dur) * 100));
+
+                startRange.value = startPct;
+                endRange.value = endPct;
+                playheadScrubber.value = curPct;
+
+                selectedRangeBar.style.left = `${startPct}%`;
+                selectedRangeBar.style.width = `${Math.max(0, endPct - startPct)}%`;
+                playheadMarker.style.left = `${curPct}%`;
+            }
+
+            function updatePlayPauseIcons() {
+                if (sourceVideo.paused) {
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                    playPauseLabel.textContent = 'Play Loop';
+                } else {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                    playPauseLabel.textContent = 'Pause';
+                }
+            }
+
+            // --- Video File Loading (Local Memory via Blob URL) ---
+            function handleVideoFile(file) {
+                if (!file) return;
+                if (state.currentObjectUrl) {
+                    URL.revokeObjectURL(state.currentObjectUrl);
+                }
+
+                state.currentVideoFile = file;
+                const url = URL.createObjectURL(file);
+                state.currentObjectUrl = url;
+                sourceVideo.src = url;
+                sourceVideo.load();
+
+                sourceVideo.onloadedmetadata = () => {
+                    state.hasVideo = true;
+                    state.videoDuration = sourceVideo.duration || 10;
+                    state.startTime = 0;
+                    // Default first clip to 15s or full duration if shorter
+                    state.endTime = Math.min(state.videoDuration, 15);
+                    sourceVideo.currentTime = 0;
+
+                    noVideoHint.classList.add('hidden');
+                    downloadReadyBox.classList.add('hidden');
+                    syncTimelineUI();
+                    updatePlayPauseIcons();
+                    showToast(`Loaded "${file.name}" (${formatTime(state.videoDuration)})`);
+                };
+
+                sourceVideo.onerror = () => {
+                    showToast('Could not decode this video format in Safari.', 'error');
+                };
+            }
+
+            videoFileInput.addEventListener('change', (e) => {
+                if (e.target.files && e.target.files[0]) {
+                    handleVideoFile(e.target.files[0]);
+                }
+            });
+
+            // Drag & Drop support on Preview Stage
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                dropZone.classList.add('ring-2', 'ring-blue-500');
+            });
+            dropZone.addEventListener('dragleave', () => {
+                dropZone.classList.remove('ring-2', 'ring-blue-500');
+            });
+            dropZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                dropZone.classList.remove('ring-2', 'ring-blue-500');
+                if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                    handleVideoFile(e.dataTransfer.files[0]);
+                }
+            });
+
+            // --- Playback & Seeking Interactions ---
+            playPauseBtn.addEventListener('click', async () => {
+                if (!state.hasVideo) {
+                    showToast('Load a video first to play & trim', 'info');
+                    videoFileInput.click();
+                    return;
+                }
+                if (sourceVideo.paused) {
+                    if (sourceVideo.currentTime < state.startTime || sourceVideo.currentTime >= state.endTime) {
+                        sourceVideo.currentTime = state.startTime;
+                    }
+                    try {
+                        await sourceVideo.play();
+                    } catch (err) {
+                        showToast('Tap Play again to start audio/video', 'info');
+                    }
+                } else {
+                    sourceVideo.pause();
+                }
+                updatePlayPauseIcons();
+            });
+
+            sourceVideo.addEventListener('play', updatePlayPauseIcons);
+            sourceVideo.addEventListener('pause', updatePlayPauseIcons);
+
+            function seekBy(delta) {
+                if (!state.hasVideo) return;
+                const next = Math.min(state.videoDuration, Math.max(0, sourceVideo.currentTime + delta));
+                sourceVideo.currentTime = next;
+                syncTimelineUI();
+            }
+
+            seekBack5Btn.addEventListener('click', () => seekBy(-5));
+            seekBack1Btn.addEventListener('click', () => seekBy(-1));
+            seekFwd1Btn.addEventListener('click', () => seekBy(1));
+            seekFwd5Btn.addEventListener('click', () => seekBy(5));
+
+            // Timeline Sliders
+            startRange.addEventListener('input', () => {
+                const dur = state.videoDuration || 10;
+                let newStart = (parseFloat(startRange.value) / 100) * dur;
+                if (newStart >= state.endTime - 0.2) {
+                    newStart = Math.max(0, state.endTime - 0.2);
+                }
+                state.startTime = newStart;
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].startTime = newStart;
+                    renderClipQueue();
+                }
+                if (state.hasVideo) {
+                    sourceVideo.currentTime = newStart;
+                }
+                syncTimelineUI();
+            });
+
+            endRange.addEventListener('input', () => {
+                const dur = state.videoDuration || 10;
+                let newEnd = (parseFloat(endRange.value) / 100) * dur;
+                if (newEnd <= state.startTime + 0.2) {
+                    newEnd = Math.min(dur, state.startTime + 0.2);
+                }
+                state.endTime = newEnd;
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].endTime = newEnd;
+                    renderClipQueue();
+                }
+                if (state.hasVideo) {
+                    sourceVideo.currentTime = newEnd;
+                }
+                syncTimelineUI();
+            });
+
+            playheadScrubber.addEventListener('input', () => {
+                if (!state.hasVideo) return;
+                const dur = state.videoDuration || 10;
+                sourceVideo.currentTime = (parseFloat(playheadScrubber.value) / 100) * dur;
+                syncTimelineUI();
+            });
+
+            setStartNowBtn.addEventListener('click', () => {
+                if (!state.hasVideo) return;
+                const cur = sourceVideo.currentTime;
+                state.startTime = cur;
+                if (state.endTime <= state.startTime + 0.2) {
+                    state.endTime = Math.min(state.videoDuration, state.startTime + 5);
+                }
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].startTime = state.startTime;
+                    state.clipQueue[state.activeReelIndex].endTime = state.endTime;
+                    renderClipQueue();
+                }
+                syncTimelineUI();
+                showToast(`Start set to ${formatTime(state.startTime)}`);
+            });
+
+            setEndNowBtn.addEventListener('click', () => {
+                if (!state.hasVideo) return;
+                const cur = sourceVideo.currentTime;
+                if (cur <= state.startTime + 0.2) {
+                    showToast('End time must be after Start time', 'error');
+                    return;
+                }
+                state.endTime = cur;
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].endTime = state.endTime;
+                    renderClipQueue();
+                }
+                syncTimelineUI();
+                showToast(`End set to ${formatTime(state.endTime)}`);
+            });
+
+            // --- Caption & Styling Controls ---
+            captionInput.addEventListener('input', (e) => {
+                state.caption = e.target.value;
+                // Keep active Reel in queue synced live when editing top caption box
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].caption = state.caption;
+                    const inlineInput = document.querySelector(`[data-reel-caption-idx="${state.activeReelIndex}"]`);
+                    if (inlineInput && document.activeElement !== inlineInput) {
+                        inlineInput.value = state.caption;
+                    }
+                }
+            });
+
+            clearCaptionBtn.addEventListener('click', () => {
+                state.caption = '';
+                captionInput.value = '';
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].caption = '';
+                    renderClipQueue();
+                }
+                captionInput.focus();
+            });
+
+            fontSizeSlider.addEventListener('input', (e) => {
+                state.fontSize = parseInt(e.target.value, 10);
+                document.getElementById('fontSizeVal').textContent = `${state.fontSize} px`;
+            });
+
+            gapSlider.addEventListener('input', (e) => {
+                state.gapAboveVideo = parseInt(e.target.value, 10);
+                document.getElementById('gapVal').textContent = `${state.gapAboveVideo} px`;
+            });
+
+            lineHeightSlider.addEventListener('input', (e) => {
+                state.lineHeight = parseFloat(e.target.value);
+                document.getElementById('lineHeightVal').textContent = `${state.lineHeight.toFixed(2)}×`;
+            });
+
+            zoomSlider.addEventListener('input', (e) => {
+                state.videoZoom = parseInt(e.target.value, 10);
+                document.getElementById('zoomVal').textContent = state.videoZoom === 100 ? '100% (Fit)' : `${state.videoZoom}%`;
+            });
+
+            themeWhiteBtn.addEventListener('click', () => {
+                state.theme = 'white';
+                themeWhiteBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-black shadow-sm transition';
+                themeBlackBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition';
+                document.getElementById('previewStageContainer').style.backgroundColor = '#ffffff';
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].theme = 'white';
+                }
+            });
+
+            themeBlackBtn.addEventListener('click', () => {
+                state.theme = 'black';
+                themeBlackBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-zinc-700 text-white shadow-sm transition';
+                themeWhiteBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition';
+                document.getElementById('previewStageContainer').style.backgroundColor = '#000000';
+                if (state.activeReelIndex >= 0 && state.clipQueue[state.activeReelIndex]) {
+                    state.clipQueue[state.activeReelIndex].theme = 'black';
+                }
+            });
+            // --- Smart Auto-Split Engine & Bulk Caption Parser ---
+
+            // Helper: Parse timecode string ("01:23", "1:02:15", "45.5") into seconds
+            function parseTimecodeToSeconds(tc) {
+                if (!tc) return null;
+                const clean = tc.trim();
+                const parts = clean.split(':').map(Number);
+                if (parts.some(isNaN)) return null;
+                if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+                if (parts.length === 2) return parts[0] * 60 + parts[1];
+                if (parts.length === 1) return parts[0];
+                return null;
+            }
+
+            // Helper: Parse pasted bulk captions cleanly (strips "1.", "2)", "Reel 1:", etc.)
+            function parseBulkCaptionsList() {
+                const raw = bulkCaptionsInput.value || '';
+                if (!raw.trim()) return [];
+
+                let blocks = [];
+                if (state.bulkDelimiterMode === 'blank') {
+                    blocks = raw.split(/\n\s*\n|^---+$/m);
+                } else {
+                    blocks = raw.split(/\r?\n/);
+                }
+
+                return blocks
+                    .map((b) => b.trim())
+                    .filter((b) => b.length > 0 && !/^---+$/.test(b))
+                    .map((b) => b.replace(/^(?:(?:reel|clip|video|caption)\s*#?\d+\s*[:\-\.\)]\s*|\d+\s*[\.\)\-:]\s*)/i, '').trim())
+                    .filter((b) => b.length > 0);
+            }
+
+            function updateBulkCaptionCounters() {
+                const captions = parseBulkCaptionsList();
+                pastedCaptionCountBadge.textContent = `${captions.length} caption${captions.length === 1 ? '' : 's'}`;
+                queueMatchCountBadge.textContent = `${state.clipQueue.length} reel${state.clipQueue.length === 1 ? '' : 's'}`;
+            }
+
+            bulkCaptionsInput.addEventListener('input', updateBulkCaptionCounters);
+
+            // Delimiter toggle buttons
+            const delimLineBtn = document.getElementById('delimLineBtn');
+            const delimBlankBtn = document.getElementById('delimBlankBtn');
+
+            delimLineBtn.addEventListener('click', () => {
+                state.bulkDelimiterMode = 'line';
+                delimLineBtn.className = 'px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black transition';
+                delimBlankBtn.className = 'px-2.5 py-1 rounded-lg text-[11px] font-semibold text-zinc-400 hover:text-white transition';
+                updateBulkCaptionCounters();
+            });
+
+            delimBlankBtn.addEventListener('click', () => {
+                state.bulkDelimiterMode = 'blank';
+                delimBlankBtn.className = 'px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black transition';
+                delimLineBtn.className = 'px-2.5 py-1 rounded-lg text-[11px] font-semibold text-zinc-400 hover:text-white transition';
+                updateBulkCaptionCounters();
+            });
+
+            // Clipboard Paste helper for iPad Safari
+            document.getElementById('pasteClipboardBulkBtn').addEventListener('click', async () => {
+                try {
+                    if (navigator.clipboard && navigator.clipboard.readText) {
+                        const text = await navigator.clipboard.readText();
+                        if (text) {
+                            bulkCaptionsInput.value = text;
+                            updateBulkCaptionCounters();
+                            showToast(`Pasted ${parseBulkCaptionsList().length} captions from clipboard!`);
+                            return;
+                        }
+                    }
+                    bulkCaptionsInput.focus();
+                    showToast('Tap inside the box and press Paste', 'info');
+                } catch (err) {
+                    bulkCaptionsInput.focus();
+                    showToast('Tap inside the box and press Paste', 'info');
+                }
+            });
+
+            // Helper: Load a specific Reel index from clipQueue into the active editor & canvas
+            function selectReelFromQueue(index, shouldSeek = true) {
+                if (index < 0 || index >= state.clipQueue.length) return;
+                const item = state.clipQueue[index];
+                state.activeReelIndex = index;
+                state.startTime = item.startTime;
+                state.endTime = item.endTime;
+                state.caption = item.caption;
+                state.theme = item.theme || state.theme;
+                captionInput.value = item.caption;
+
+                if (state.theme === 'white') {
+                    themeWhiteBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-white text-black shadow-sm transition';
+                    themeBlackBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition';
+                    document.getElementById('previewStageContainer').style.backgroundColor = '#ffffff';
+                } else {
+                    themeBlackBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-zinc-700 text-white shadow-sm transition';
+                    themeWhiteBtn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition';
+                    document.getElementById('previewStageContainer').style.backgroundColor = '#000000';
+                }
+
+                if (state.hasVideo && shouldSeek) {
+                    sourceVideo.currentTime = item.startTime;
+                }
+                syncTimelineUI();
+                renderClipQueue();
+            }
+
+            // Map Pasted Captions 1-to-1 onto Existing Reels in Queue
+            document.getElementById('mapCaptionsToReelsBtn').addEventListener('click', () => {
+                const captions = parseBulkCaptionsList();
+                if (captions.length === 0) {
+                    showToast('Paste your captions in the box first!', 'error');
+                    bulkCaptionsInput.focus();
+                    return;
+                }
+
+                // If no clips exist yet, automatically split the video into N equal Reels matching the caption count
+                if (state.clipQueue.length === 0) {
+                    const dur = state.videoDuration || (captions.length * 15);
+                    const sliceLen = dur / captions.length;
+                    for (let i = 0; i < captions.length; i++) {
+                        state.clipQueue.push({
+                            startTime: Number((i * sliceLen).toFixed(2)),
+                            endTime: Number(Math.min(dur, (i + 1) * sliceLen).toFixed(2)),
+                            caption: captions[i],
+                            theme: state.theme,
+                            status: 'Ready'
+                        });
+                    }
+                    selectReelFromQueue(0);
+                    showToast(`Created ${captions.length} Reels & mapped all captions!`);
+                    return;
+                }
+
+                const applyCount = Math.min(captions.length, state.clipQueue.length);
+                for (let i = 0; i < applyCount; i++) {
+                    state.clipQueue[i].caption = captions[i];
+                }
+
+                // If there are MORE captions than clips and a video is loaded, offer/create extra clips or notify
+                const activeIdx = state.activeReelIndex >= 0 ? state.activeReelIndex : 0;
+                selectReelFromQueue(activeIdx, false);
+                if (captions.length > state.clipQueue.length) {
+                    showToast(`Mapped ${applyCount} captions (${captions.length - applyCount} extra captions unused)`, 'info');
+                } else {
+                    showToast(`Mapped ${applyCount} captions 1-to-1 to Reels!`);
+                }
+            });
+
+            // Auto-Split Video into Exactly N Reels to Match Pasted Captions Count
+            document.getElementById('splitToMatchCaptionsBtn').addEventListener('click', () => {
+                const captions = parseBulkCaptionsList();
+                if (captions.length === 0) {
+                    showToast('Paste your captions first so we know how many Reels to cut!', 'error');
+                    bulkCaptionsInput.focus();
+                    return;
+                }
+                const dur = state.videoDuration || (captions.length * 15);
+                const sliceLen = dur / captions.length;
+                state.clipQueue = captions.map((cap, idx) => ({
+                    startTime: Number((idx * sliceLen).toFixed(2)),
+                    endTime: Number(Math.min(dur, (idx + 1) * sliceLen).toFixed(2)),
+                    caption: cap,
+                    theme: state.theme,
+                    status: 'Ready'
+                }));
+                selectReelFromQueue(0);
+                showToast(`Split video into ${captions.length} Reels (${sliceLen.toFixed(1)}s each) with captions!`);
+            });
+
+            // --- Smart Auto-Split Tabs & Engines ---
+            const splitModeIntervalBtn = document.getElementById('splitModeIntervalBtn');
+            const splitModePeaksBtn = document.getElementById('splitModePeaksBtn');
+            const splitModeScriptBtn = document.getElementById('splitModeScriptBtn');
+            const splitPanelInterval = document.getElementById('splitPanelInterval');
+            const splitPanelPeaks = document.getElementById('splitPanelPeaks');
+            const splitPanelScript = document.getElementById('splitPanelScript');
+
+            function switchSplitTab(mode) {
+                const activeCls = 'py-2 px-2 rounded-lg text-xs font-bold bg-purple-600 text-white shadow transition';
+                const inactiveCls = 'py-2 px-2 rounded-lg text-xs font-semibold text-zinc-400 hover:text-white transition';
+                splitModeIntervalBtn.className = mode === 'interval' ? activeCls : inactiveCls;
+                splitModePeaksBtn.className = mode === 'peaks' ? activeCls : inactiveCls;
+                splitModeScriptBtn.className = mode === 'script' ? activeCls : inactiveCls;
+
+                splitPanelInterval.classList.toggle('hidden', mode !== 'interval');
+                splitPanelPeaks.classList.toggle('hidden', mode !== 'peaks');
+                splitPanelScript.classList.toggle('hidden', mode !== 'script');
+            }
+
+            splitModeIntervalBtn.addEventListener('click', () => switchSplitTab('interval'));
+            splitModePeaksBtn.addEventListener('click', () => switchSplitTab('peaks'));
+            splitModeScriptBtn.addEventListener('click', () => switchSplitTab('script'));
+
+            const intervalDurationSelect = document.getElementById('intervalDurationSelect');
+            const customIntervalInput = document.getElementById('customIntervalInput');
+            intervalDurationSelect.addEventListener('change', () => {
+                customIntervalInput.classList.toggle('hidden', intervalDurationSelect.value !== 'custom');
+            });
+
+            // MODE 1: Equal Smart Intervals Auto-Split
+            document.getElementById('runIntervalSplitBtn').addEventListener('click', () => {
+                if (!state.hasVideo) {
+                    showToast('Load a long-form video first!', 'error');
+                    videoFileInput.click();
+                    return;
+                }
+                const dur = state.videoDuration;
+                const rawLen = intervalDurationSelect.value === 'custom'
+                    ? Math.max(3, parseFloat(customIntervalInput.value) || 25)
+                    : parseFloat(intervalDurationSelect.value);
+                const overlap = parseFloat(document.getElementById('intervalOverlapSelect').value) || 0;
+                const minTail = parseFloat(document.getElementById('minTailSelect').value) || 8;
+                const step = Math.max(2, rawLen - overlap);
+
+                const pastedCaptions = parseBulkCaptionsList();
+                const segments = [];
+                let cursor = 0;
+
+                while (cursor < dur - 0.5) {
+                    let end = Math.min(dur, cursor + rawLen);
+                    const remainingAfter = dur - end;
+                    // Merge tiny leftover tail into the current Reel so no 2-second orphan clip is produced
+                    if (remainingAfter > 0 && remainingAfter < minTail) {
+                        end = dur;
+                    }
+                    const idx = segments.length;
+                    segments.push({
+                        startTime: Number(cursor.toFixed(2)),
+                        endTime: Number(end.toFixed(2)),
+                        caption: pastedCaptions[idx] !== undefined ? pastedCaptions[idx] : state.caption,
+                        theme: state.theme,
+                        status: 'Ready'
+                    });
+                    if (end >= dur) break;
+                    cursor += step;
+                }
+
+                state.clipQueue = segments;
+                selectReelFromQueue(0);
+                const mappedMsg = pastedCaptions.length > 0 ? ` & auto-mapped ${Math.min(pastedCaptions.length, segments.length)} captions` : '';
+                showToast(`Generated ${segments.length} Reels${mappedMsg}!`);
+            });
+
+            // MODE 2: Client-Side Audio Peak / Energy Detection
+            document.getElementById('runPeakSplitBtn').addEventListener('click', async () => {
+                if (!state.hasVideo || !state.currentVideoFile) {
+                    showToast('Load a video first to analyze audio peaks!', 'error');
+                    videoFileInput.click();
+                    return;
+                }
+
+                const peakBtn = document.getElementById('runPeakSplitBtn');
+                const peakBtnLabel = document.getElementById('peakBtnLabel');
+                const targetCount = parseInt(document.getElementById('peakCountSelect').value, 10) || 5;
+                const windowSec = parseFloat(document.getElementById('peakWindowSelect').value) || 25;
+                const dur = state.videoDuration;
+
+                peakBtn.disabled = true;
+                peakBtnLabel.textContent = 'Analyzing Audio Waveform...';
+
+                try {
+                    const arrayBuffer = await state.currentVideoFile.arrayBuffer();
+                    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                    const tempCtx = new AudioContextClass();
+                    const audioBuffer = await tempCtx.decodeAudioData(arrayBuffer);
+                    const channelData = audioBuffer.getChannelData(0);
+                    const sampleRate = audioBuffer.sampleRate;
+
+                    // Compute RMS energy in 1-second buckets across the entire video
+                    const totalSecs = Math.max(1, Math.floor(audioBuffer.duration));
+                    const energies = [];
+                    for (let s = 0; s < totalSecs; s++) {
+                        const startSample = s * sampleRate;
+                        const endSample = Math.min(channelData.length, (s + 1) * sampleRate);
+                        let sumSq = 0;
+                        // Stride by 8 samples for super-fast mobile decoding
+                        let count = 0;
+                        for (let i = startSample; i < endSample; i += 8) {
+                            const v = channelData[i];
+                            sumSq += v * v;
+                            count++;
+                        }
+                        const rms = count > 0 ? Math.sqrt(sumSq / count) : 0;
+                        energies.push({ sec: s, rms });
+                    }
+                    await tempCtx.close();
+
+                    // Pick top non-overlapping energy peaks separated by at least windowSec * 0.75
+                    const sortedByEnergy = [...energies].sort((a, b) => b.rms - a.rms);
+                    const chosenPeaks = [];
+                    const minGap = Math.max(5, windowSec * 0.75);
+
+                    for (const item of sortedByEnergy) {
+                        if (chosenPeaks.length >= targetCount) break;
+                        const tooClose = chosenPeaks.some((p) => Math.abs(p - item.sec) < minGap);
+                        if (!tooClose) {
+                            chosenPeaks.push(item.sec);
+                        }
+                    }
+
+                    // Sort chronologically so Reels follow story order
+                    chosenPeaks.sort((a, b) => a - b);
+
+                    const pastedCaptions = parseBulkCaptionsList();
+                    const preLead = Math.min(5, windowSec * 0.25); // Start slightly before peak for hook context
+                    const segments = chosenPeaks.map((peakSec, idx) => {
+                        let start = Math.max(0, peakSec - preLead);
+                        let end = Math.min(dur, start + windowSec);
+                        if (end - start < Math.min(dur, windowSec)) {
+                            start = Math.max(0, end - windowSec);
+                        }
+                        return {
+                            startTime: Number(start.toFixed(2)),
+                            endTime: Number(end.toFixed(2)),
+                            caption: pastedCaptions[idx] !== undefined ? pastedCaptions[idx] : state.caption,
+                            theme: state.theme,
+                            status: 'Ready'
+                        };
+                    });
+
+                    if (segments.length === 0) {
+                        throw new Error('No distinct peaks found');
+                    }
+
+                    state.clipQueue = segments;
+                    selectReelFromQueue(0);
+                    showToast(`Detected ${segments.length} high-energy Reel moments!`);
+                } catch (err) {
+                    console.warn('Audio peak scan fallback to smart intervals:', err);
+                    showToast('Audio track unavailable; using smart interval split instead', 'info');
+                    document.getElementById('runIntervalSplitBtn').click();
+                } finally {
+                    peakBtn.disabled = false;
+                    peakBtnLabel.textContent = 'Detect Audio Peaks & Create Reels';
+                }
+            });
+
+            // MODE 3: Timestamp + Caption Script Parser
+            document.getElementById('runScriptParseBtn').addEventListener('click', () => {
+                const raw = document.getElementById('timestampScriptInput').value || '';
+                const lines = raw.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+                if (lines.length === 0) {
+                    showToast('Paste at least one timestamp line first!', 'error');
+                    return;
+                }
+
+                const dur = state.videoDuration || 300;
+                const parsed = [];
+
+                for (const line of lines) {
+                    // Match "MM:SS - MM:SS | Caption" or "MM:SS Caption"
+                    const rangeMatch = line.match(/^(\d{1,2}:\d{2}(?::\d{2})?)\s*(?:-|–|to)\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*(?:[\|\-\:]\s*)?(.*)$/i);
+                    if (rangeMatch) {
+                        const s = parseTimecodeToSeconds(rangeMatch[1]);
+                        const e = parseTimecodeToSeconds(rangeMatch[2]);
+                        if (s !== null && e !== null && e > s) {
+                            parsed.push({
+                                startTime: Math.min(dur, s),
+                                endTime: Math.min(dur, e),
+                                caption: (rangeMatch[3] || state.caption).trim(),
+                                theme: state.theme,
+                                status: 'Ready'
+                            });
+                            continue;
+                        }
+                    }
+
+                    const singleMatch = line.match(/^(\d{1,2}:\d{2}(?::\d{2})?)\s*(?:[\|\-\:]\s*)?(.*)$/i);
+                    if (singleMatch) {
+                        const s = parseTimecodeToSeconds(singleMatch[1]);
+                        if (s !== null) {
+                            parsed.push({
+                                startTime: Math.min(dur, s),
+                                endTime: Math.min(dur, s + 20),
+                                caption: (singleMatch[2] || state.caption).trim(),
+                                theme: state.theme,
+                                status: 'Ready'
+                            });
+                        }
+                    }
+                }
+
+                if (parsed.length === 0) {
+                    showToast('Could not parse timestamps. Use format: 00:15 - 00:35 | Your caption', 'error');
+                    return;
+                }
+
+                state.clipQueue = parsed;
+                selectReelFromQueue(0);
+                showToast(`Created ${parsed.length} Reels from timestamps & captions!`);
+            });
+
+            // --- Multi-Clip Queue Management (Storyboard with Inline Caption Editing) ---
+            function renderClipQueue() {
+                queueCount.textContent = state.clipQueue.length;
+                batchExportBtnText.textContent = `Batch Export All Reels (${state.clipQueue.length})`;
+                updateBulkCaptionCounters();
+
+                if (state.clipQueue.length === 0) {
+                    clipQueueList.innerHTML = `
+                        <div class="text-xs text-zinc-500 bg-zinc-900/50 border border-dashed border-zinc-800 rounded-xl p-4 text-center">
+                            No Reels generated yet. Use <strong class="text-purple-300">Smart Auto-Split Engine</strong> above or tap <strong class="text-zinc-300">+ Add Current Cut as New Reel</strong>.
+                        </div>`;
+                    return;
+                }
+
+                clipQueueList.innerHTML = '';
+                state.clipQueue.forEach((item, index) => {
+                    const isSelected = index === state.activeReelIndex;
+                    const row = document.createElement('div');
+                    row.className = `rounded-xl p-3 border transition cursor-pointer space-y-2 ${
+                        isSelected
+                            ? 'bg-blue-950/35 border-blue-500/70 ring-1 ring-blue-500/40'
+                            : 'bg-zinc-900/90 hover:bg-zinc-800/90 border-zinc-800'
+                    }`;
+                    const duration = Math.max(0.1, item.endTime - item.startTime);
+                    const statusBadge = item.status === 'Done'
+                        ? '<span class="text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded">Exported ✓</span>'
+                        : item.status === 'Rendering...'
+                        ? '<span class="text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded animate-pulse">Rendering...</span>'
+                        : '<span class="text-[10px] font-semibold bg-zinc-800 text-zinc-300 px-2 py-0.5 rounded">Ready</span>';
+
+                    row.innerHTML = `
+                        <div class="flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="text-[11px] font-extrabold ${isSelected ? 'bg-blue-500 text-white' : 'bg-zinc-700 text-zinc-200'} px-2 py-0.5 rounded">Reel ${String(index + 1).padStart(2, '0')}</span>
+                                <span class="text-[11px] font-mono text-zinc-300">${formatTime(item.startTime)} → ${formatTime(item.endTime)}</span>
+                                <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">${duration.toFixed(1)}s</span>
+                                ${statusBadge}
+                            </div>
+                            <button data-action="delete" data-index="${index}" class="p-1.5 rounded-lg text-zinc-400 hover:text-rose-400 hover:bg-rose-500/10 transition shrink-0" title="Remove Reel">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+                            <input type="text" data-reel-caption-idx="${index}" value="${escapeHtml(item.caption || '')}" placeholder="Type onscreen caption for Reel ${String(index + 1).padStart(2, '0')}..." class="w-full bg-zinc-950/90 border border-zinc-700/80 focus:border-blue-400 rounded-lg px-2.5 py-2 text-xs text-white placeholder-zinc-500 outline-none select-text">
+                        </div>
+                    `;
+
+                    // Inline caption input updates both queue item and live preview immediately
+                    const inlineInput = row.querySelector(`[data-reel-caption-idx="${index}"]`);
+                    inlineInput.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (state.activeReelIndex !== index) {
+                            selectReelFromQueue(index);
+                        }
+                    });
+                    inlineInput.addEventListener('input', (e) => {
+                        item.caption = e.target.value;
+                        if (state.activeReelIndex === index) {
+                            state.caption = e.target.value;
+                            captionInput.value = e.target.value;
+                        }
+                    });
+
+                    row.addEventListener('click', (e) => {
+                        const delBtn = e.target.closest('[data-action="delete"]');
+                        if (delBtn) {
+                            state.clipQueue.splice(index, 1);
+                            if (state.activeReelIndex === index) {
+                                state.activeReelIndex = state.clipQueue.length > 0 ? 0 : -1;
+                            } else if (state.activeReelIndex > index) {
+                                state.activeReelIndex--;
+                            }
+                            renderClipQueue();
+                            showToast('Removed Reel from queue', 'info');
+                            return;
+                        }
+                        selectReelFromQueue(index);
+                    });
+
+                    clipQueueList.appendChild(row);
+                });
+            }
+
+            function escapeHtml(str) {
+                return str.replace(/[&<>"']/g, (m) => ({
+                    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+                }[m]));
+            }
+
+            saveToQueueBtn.addEventListener('click', () => {
+                state.clipQueue.push({
+                    startTime: state.startTime,
+                    endTime: state.endTime,
+                    caption: state.caption,
+                    theme: state.theme,
+                    status: 'Ready'
+                });
+                selectReelFromQueue(state.clipQueue.length - 1, false);
+                showToast(`Added Reel ${String(state.clipQueue.length).padStart(2, '0')} to queue!`);
+            });
+
+            clearQueueBtn.addEventListener('click', () => {
+                state.clipQueue = [];
+                state.activeReelIndex = -1;
+                renderClipQueue();
+                showToast('Cleared all Reels from queue', 'info');
+            });
+
+            // --- Detect Supported MediaRecorder MIME Type (MP4 prioritized for iPad Safari) ---
+            function getBestVideoMimeType() {
+                if (typeof MediaRecorder === 'undefined') return null;
+                const candidates = [
+                    'video/mp4;codecs=avc1,mp4a.40.2',
+                    'video/mp4;codecs=h264,aac',
+                    'video/mp4',
+                    'video/webm;codecs=vp9,opus',
+                    'video/webm;codecs=vp8,opus',
+                    'video/webm'
+                ];
+                for (const mime of candidates) {
+                    if (MediaRecorder.isTypeSupported(mime)) {
+                        return mime;
+                    }
+                }
+                return '';
+            }
+
+            // Update format badge on load
+            const detectedMime = getBestVideoMimeType();
+            if (detectedMime && detectedMime.includes('mp4')) {
+                document.getElementById('formatSupportBadge').textContent = 'Native .MP4';
+                document.getElementById('exportBtnText').textContent = 'Export Active Reel Only (.mp4)';
+            } else if (detectedMime) {
+                document.getElementById('formatSupportBadge').textContent = 'WebM Video';
+                document.getElementById('exportBtnText').textContent = 'Export Active Reel Only (.webm)';
+            }
+
+            // --- PNG Snapshot Export (Instant 1080x1920 Still Image) ---
+            exportSnapshotBtn.addEventListener('click', () => {
+                renderCompositeFrame(exportCtx);
+                exportCanvas.toBlob((blob) => {
+                    if (!blob) return;
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `clipframe-9x16-${Date.now()}.png`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    setTimeout(() => URL.revokeObjectURL(url), 5000);
+                    showToast('Saved 1080×1920 PNG snapshot!');
+                }, 'image/png');
+            });
+
+            // --- Reusable Single-Segment 1080x1920 Renderer ---
+            async function renderSingleSegmentToBlob(segStart, segEnd, segCaption, segTheme, labelPrefix, mimeType) {
+                state.startTime = segStart;
+                state.endTime = segEnd;
+                state.caption = segCaption;
+                state.theme = segTheme || state.theme;
+                captionInput.value = segCaption;
+
+                sourceVideo.pause();
+                sourceVideo.currentTime = segStart;
+
+                await new Promise((resolve) => {
+                    const onSeeked = () => {
+                        sourceVideo.removeEventListener('seeked', onSeeked);
+                        resolve();
+                    };
+                    sourceVideo.addEventListener('seeked', onSeeked);
+                });
+
+                const canvasStream = exportCanvas.captureStream(30);
+
+                // Route video audio into stream via Web Audio API so exported clip has full sound
+                try {
+                    if (!audioCtx) {
+                        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                        audioCtx = new AudioContextClass();
+                        mediaElementSource = audioCtx.createMediaElementSource(sourceVideo);
+                        audioDestination = audioCtx.createMediaStreamDestination();
+                        mediaElementSource.connect(audioDestination);
+                        mediaElementSource.connect(audioCtx.destination);
+                    }
+                    if (audioCtx.state === 'suspended') {
+                        await audioCtx.resume();
+                    }
+                    audioDestination.stream.getAudioTracks().forEach((track) => {
+                        canvasStream.addTrack(track);
+                    });
+                } catch (audioErr) {
+                    console.warn('Audio track routing fallback (video-only):', audioErr);
+                }
+
+                const recorderOptions = mimeType ? { mimeType, videoBitsPerSecond: 8000000 } : { videoBitsPerSecond: 8000000 };
+                const recorder = new MediaRecorder(canvasStream, recorderOptions);
+                const chunks = [];
+
+                recorder.ondataavailable = (e) => {
+                    if (e.data && e.data.size > 0) {
+                        chunks.push(e.data);
+                    }
+                };
+
+                const recordingFinished = new Promise((resolve) => {
+                    recorder.onstop = resolve;
+                });
+
+                const clipDuration = Math.max(0.2, segEnd - segStart);
+                renderCompositeFrame(exportCtx);
+                recorder.start(250);
+                await sourceVideo.play();
+
+                await new Promise((resolve) => {
+                    function stepRender() {
+                        if (state.cancelExportFlag) {
+                            resolve();
+                            return;
+                        }
+                        renderCompositeFrame(exportCtx);
+                        const elapsed = Math.max(0, sourceVideo.currentTime - segStart);
+                        const pct = Math.min(100, Math.round((elapsed / clipDuration) * 100));
+                        exportProgressBar.style.width = `${pct}%`;
+                        exportPercentText.textContent = `${pct}%`;
+                        exportStatusText.textContent = `${labelPrefix}: ${elapsed.toFixed(1)}s / ${clipDuration.toFixed(1)}s...`;
+
+                        if (sourceVideo.currentTime >= segEnd || sourceVideo.ended) {
+                            resolve();
+                        } else {
+                            requestAnimationFrame(stepRender);
+                        }
+                    }
+                    requestAnimationFrame(stepRender);
+                });
+
+                sourceVideo.pause();
+                if (recorder.state !== 'inactive') {
+                    recorder.stop();
+                }
+                await recordingFinished;
+
+                if (state.cancelExportFlag) return null;
+
+                const actualMime = recorder.mimeType || mimeType || 'video/mp4';
+                const ext = actualMime.includes('webm') ? 'webm' : 'mp4';
+                const blob = new Blob(chunks, { type: actualMime });
+                return { blob, ext };
+            }
+
+            // --- Export Active Reel Only ---
+            exportClipBtn.addEventListener('click', async () => {
+                if (!state.hasVideo) {
+                    showToast('Please load a video first before exporting!', 'error');
+                    videoFileInput.click();
+                    return;
+                }
+                if (state.isExporting) return;
+
+                const mimeType = getBestVideoMimeType();
+                if (mimeType === null) {
+                    showToast('MediaRecorder is not supported in this browser.', 'error');
+                    return;
+                }
+
+                state.isExporting = true;
+                state.cancelExportFlag = false;
+                exportClipBtn.disabled = true;
+                batchExportAllBtn.disabled = true;
+                downloadReadyBox.classList.add('hidden');
+                exportProgressContainer.classList.remove('hidden');
+
+                try {
+                    const activeIdx = state.activeReelIndex;
+                    if (activeIdx >= 0 && state.clipQueue[activeIdx]) {
+                        state.clipQueue[activeIdx].status = 'Rendering...';
+                        renderClipQueue();
+                    }
+
+                    const result = await renderSingleSegmentToBlob(
+                        state.startTime,
+                        state.endTime,
+                        state.caption,
+                        state.theme,
+                        'Rendering 1080×1920 Reel',
+                        mimeType
+                    );
+
+                    if (state.cancelExportFlag || !result) {
+                        if (activeIdx >= 0 && state.clipQueue[activeIdx]) {
+                            state.clipQueue[activeIdx].status = 'Ready';
+                            renderClipQueue();
+                        }
+                        showToast('Render cancelled', 'info');
+                    } else {
+                        if (state.lastExportUrl) URL.revokeObjectURL(state.lastExportUrl);
+                        const downloadUrl = URL.createObjectURL(result.blob);
+                        state.lastExportUrl = downloadUrl;
+
+                        const reelTag = activeIdx >= 0 ? `Reel_${String(activeIdx + 1).padStart(2, '0')}` : `Reel_${Date.now()}`;
+                        const filename = `${reelTag}_1080x1920.${result.ext}`;
+                        manualDownloadLink.href = downloadUrl;
+                        manualDownloadLink.download = filename;
+                        downloadMetaText.textContent = `1080×1920 • ${(result.blob.size / (1024 * 1024)).toFixed(2)} MB • .${result.ext.toUpperCase()}`;
+                        downloadReadyBox.classList.remove('hidden');
+
+                        const tempLink = document.createElement('a');
+                        tempLink.href = downloadUrl;
+                        tempLink.download = filename;
+                        document.body.appendChild(tempLink);
+                        tempLink.click();
+                        document.body.removeChild(tempLink);
+
+                        if (activeIdx >= 0 && state.clipQueue[activeIdx]) {
+                            state.clipQueue[activeIdx].status = 'Done';
+                            renderClipQueue();
+                        }
+                        showToast(`Exported ${filename}!`);
+                    }
+                } catch (err) {
+                    console.error('Export error:', err);
+                    showToast('Export interrupted. Try a shorter clip or Safari.', 'error');
+                } finally {
+                    state.isExporting = false;
+                    exportClipBtn.disabled = false;
+                    batchExportAllBtn.disabled = false;
+                    exportProgressContainer.classList.add('hidden');
+                    sourceVideo.currentTime = state.startTime;
+                    syncTimelineUI();
+                }
+            });
+
+            // --- Batch Export ALL Ready-to-Upload Reels Sequentially ---
+            batchExportAllBtn.addEventListener('click', async () => {
+                if (!state.hasVideo) {
+                    showToast('Load a video first before batch exporting!', 'error');
+                    videoFileInput.click();
+                    return;
+                }
+                if (state.clipQueue.length === 0) {
+                    showToast('Generate or add at least 1 Reel to your queue first!', 'error');
+                    return;
+                }
+                if (state.isExporting) return;
+
+                const mimeType = getBestVideoMimeType();
+                if (mimeType === null) {
+                    showToast('MediaRecorder is not supported in this browser.', 'error');
+                    return;
+                }
+
+                state.isExporting = true;
+                state.cancelExportFlag = false;
+                exportClipBtn.disabled = true;
+                batchExportAllBtn.disabled = true;
+                downloadReadyBox.classList.add('hidden');
+                exportProgressContainer.classList.remove('hidden');
+
+                let exportedCount = 0;
+                const total = state.clipQueue.length;
+
+                try {
+                    for (let i = 0; i < total; i++) {
+                        if (state.cancelExportFlag) break;
+
+                        const reel = state.clipQueue[i];
+                        state.activeReelIndex = i;
+                        reel.status = 'Rendering...';
+                        renderClipQueue();
+
+                        const result = await renderSingleSegmentToBlob(
+                            reel.startTime,
+                            reel.endTime,
+                            reel.caption,
+                            reel.theme,
+                            `Batch Reel ${i + 1}/${total}`,
+                            mimeType
+                        );
+
+                        if (state.cancelExportFlag || !result) {
+                            reel.status = 'Ready';
+                            renderClipQueue();
+                            break;
+                        }
+
+                        const url = URL.createObjectURL(result.blob);
+                        const filename = `Reel_${String(i + 1).padStart(2, '0')}_1080x1920.${result.ext}`;
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = filename;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        setTimeout(() => URL.revokeObjectURL(url), 15000);
+
+                        reel.status = 'Done';
+                        exportedCount++;
+                        renderClipQueue();
+
+                        // Short pause so iPad Safari handles sequential file downloads cleanly
+                        await new Promise((r) => setTimeout(r, 450));
+                    }
+
+                    if (state.cancelExportFlag) {
+                        showToast(`Batch stopped (${exportedCount}/${total} exported)`, 'info');
+                    } else {
+                        downloadMetaText.textContent = `Batch complete: ${exportedCount} ready-to-upload 1080×1920 Reels saved!`;
+                        downloadReadyBox.classList.remove('hidden');
+                        showToast(`All ${exportedCount} Reels exported & ready to upload!`);
+                    }
+                } catch (err) {
+                    console.error('Batch export error:', err);
+                    showToast('Batch export interrupted.', 'error');
+                } finally {
+                    state.isExporting = false;
+                    exportClipBtn.disabled = false;
+                    batchExportAllBtn.disabled = false;
+                    exportProgressContainer.classList.add('hidden');
+                    syncTimelineUI();
+                }
+            });
+
+            // --- Save Standalone HTML File Directly to iPad Files ---
+            document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
+                const htmlSource = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                const blob = new Blob([htmlSource], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'clipframe-9x16-ipad.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 5000);
+                showToast('Saved standalone HTML app to Files!');
+            });
+
+            // --- Localhost Help Modal Controls ---
+            const helpModal = document.getElementById('helpModal');
+            document.getElementById('helpModalBtn').addEventListener('click', () => {
+                helpModal.classList.remove('hidden');
+                helpModal.classList.add('flex');
+            });
+            const closeHelp = () => {
+                helpModal.classList.add('hidden');
+                helpModal.classList.remove('flex');
+            };
+            document.getElementById('closeHelpModalBtn').addEventListener('click', closeHelp);
+            document.getElementById('gotItBtn').addEventListener('click', closeHelp);
+            helpModal.addEventListener('click', (e) => {
+                if (e.target === helpModal) closeHelp();
+            });
+
+            // Initialize UI & Start 60fps Live Preview Canvas
+            window.addEventListener('load', () => {
+                syncTimelineUI();
+                previewLoop();
+            });
+        })();
+    </script>
+
+</body></html>
